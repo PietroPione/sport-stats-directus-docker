@@ -17,3 +17,9 @@ services:
         value: sports_stats_database_user
       - key: DB_PASSWORD
         value: aq4aayxa8UWK4AtJut3BfBxvzli0KCZO
+      - key: ADMIN_EMAIL
+        value: pietrofrlavoro@gmail.com
+      - key: ADMIN_PASSWORD
+        value: d1r3ctus!Databas3
+      - key: ADMIN_USERNAME
+        value: PietroPio
