@@ -1,8 +1,20 @@
-# Usa l'immagine ufficiale di Directus
-FROM directus/directus:latest
+# Usa un'immagine ufficiale di Node.js
+FROM node:18
 
-# Imposta la porta su cui Directus ascolta
+# Imposta la directory di lavoro
+WORKDIR /directus
+
+# Copia i file necessari (package.json e package-lock.json)
+COPY package*.json ./
+
+# Installa le dipendenze
+RUN npm install
+
+# Copia il resto dei file del progetto
+COPY . .
+
+# Espone la porta per Render
 EXPOSE 8055
 
-# Comando di default per avviare Directus
-CMD ["directus", "start"]
+# Comando di avvio
+CMD ["npx", "directus", "start"]
