@@ -13,8 +13,8 @@ RUN npm install
 # Copia il resto dei file del progetto
 COPY . .
 
-# Esegui il bootstrap (assicurati di avere le variabili di ambiente giuste per il DB)
-RUN npx directus bootstrap --db-client=postgres --db-host=dpg-cu0kcipopnds73cgaoc0-a --db-port=5432 --db-database=sports_stats_database --db-user=sports_stats_database_user --db-password=aq4aayxa8UWK4AtJut3BfBxvzli0KCZO
+# Esegui il bootstrap (il comando bootstrap rileverà automaticamente le variabili d'ambiente)
+RUN npx directus bootstrap
 
 # Espone la porta per Render
 EXPOSE 8055
