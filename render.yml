@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: directus
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_CLIENT
+        value: postgres
+      - key: DATABASE_HOST
+        value: dpg-cu0kcipopnds73cgaoc0-a
+      - key: DATABASE_PORT
+        value: 5432
+      - key: DATABASE_NAME
+        value: sports_stats_database
+      - key: DATABASE_USER
+        value: sports_stats_database_user
+      - key: DATABASE_PASSWORD
+        value: aq4aayxa8UWK4AtJut3BfBxvzli0KCZO
