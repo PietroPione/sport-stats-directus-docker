@@ -5,15 +5,15 @@ services:
     plan: starter
     dockerfilePath: ./Dockerfile
     envVars:
-      - key: DATABASE_CLIENT
+      - key: DB_CLIENT
         value: postgres
-      - key: DATABASE_HOST
+      - key: DB_HOST
         value: dpg-cu0kcipopnds73cgaoc0-a
-      - key: DATABASE_PORT
+      - key: DB_PORT
         value: 5432
-      - key: DATABASE_NAME
+      - key: DB_DATABASE
         value: sports_stats_database
-      - key: DATABASE_USER
+      - key: DB_USER
         value: sports_stats_database_user
-      - key: DATABASE_PASSWORD
+      - key: DB_PASSWORD
         value: aq4aayxa8UWK4AtJut3BfBxvzli0KCZO
