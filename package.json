@@ -1,0 +1,19 @@
+{
+  "name": "directus-app",
+  "version": "1.0.0",
+  "description": "A Dockerized Directus project",
+  "main": "index.js",
+  "scripts": {
+    "start": "directus start"
+  },
+  "keywords": [
+    "directus",
+    "cms",
+    "docker"
+  ],
+  "author": "Il tuo nome",
+  "license": "MIT",
+  "dependencies": {
+    "directus": "^10.0.0"
+  }
+}
