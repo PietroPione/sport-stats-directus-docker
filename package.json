@@ -14,6 +14,6 @@
   "author": "Il tuo nome",
   "license": "MIT",
   "dependencies": {
-    "directus": "^10.0.0"
+    "directus": "^11.3.5"
   }
 }

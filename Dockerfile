@@ -7,7 +7,10 @@ WORKDIR /directus
 # Copia i file necessari (package.json e package-lock.json)
 COPY package*.json ./
 
-# Installa le dipendenze
+# Installa l'ultima versione di Directus
+RUN npm install directus@latest
+
+# Installa tutte le altre dipendenze
 RUN npm install
 
 # Copia il resto dei file del progetto
