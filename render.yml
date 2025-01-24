@@ -23,3 +23,7 @@ services:
         value: d1r3ctus!Databas3
       - key: ADMIN_USERNAME
         value: PietroPio
+      - key: CORS_ENABLED
+        value: "true"
+      - key: CORS_ORIGIN
+        value: "http://localhost:3000,https://sports-stats.netlify.app/"
